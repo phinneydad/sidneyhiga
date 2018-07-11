@@ -99,14 +99,14 @@ models.
 ![ML Model Building Stages](assets/pdm-assets/mlmodelbuildingstages.png)
 
 Microsoft has published [a detailed
-guide](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/cortana-analytics-playbook-predictive-maintenance)
+guide](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/cortana-analytics-playbook-predictive-maintenance?WT.mc_id=pdmsolution-docs-ercenk)
 on how to prepare the data and train the machine learning model. There are three typical maintenance questions, and the related machine learning algorithms:
 
 - _For the asset, what is the probability that a failure will occur within the next X hours?_ Answer: 0-100%
-  - **Binary classification:** Binary classification is a machine learning method that uses data to determine the category, type, or class of an item or row of data, as a member of one of the two classes. There are multiple types of classification algorithms, Microsoft published a set of algorithms available as [Machine Learning Studio modules](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-classification).
+  - **Binary classification:** Binary classification is a machine learning method that uses data to determine the category, type, or class of an item or row of data, as a member of one of the two classes. There are multiple types of classification algorithms, Microsoft published a set of algorithms available as [Machine Learning Studio modules](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-classification?WT.mc_id=pdmsolution-docs-ercenk).
 - _What is the remaining useful life of the asset?_ Answer: X hours
-  - **Regression:** Regression is a class of machine learning algorithms that predict the value of a variable, given a set of other variables. Machine Learning Studio includes a set of regression algorithms as [modules](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-regression).
-    - **Long Short Term Memory (LSTM):** [LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) networks are a type of deep neural networks (DNN). Inspiration of DNNs comes from modelling the behavior of individual neurons in the brain. Microsoft has published a [step-by-step guide](https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance) for describing on using an LSTM for Predictive Maintenance
+  - **Regression:** Regression is a class of machine learning algorithms that predict the value of a variable, given a set of other variables. Machine Learning Studio includes a set of regression algorithms as [modules](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-regression?WT.mc_id=pdmsolution-docs-ercenk).
+    - **Long Short Term Memory (LSTM):** [LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/?WT.mc_id=pdmsolution-docs-ercenk) networks are a type of deep neural networks (DNN). Inspiration of DNNs comes from modelling the behavior of individual neurons in the brain. Microsoft has published a [step-by-step guide](https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance?WT.mc_id=pdmsolution-docs-ercenk) for describing on using an LSTM for Predictive Maintenance
 - _Which asset requires servicing most urgently?_ Answer: Asset X
   - **Multi-class classification:** Multi-class classification is a machine learning method that uses data to determine the category, type, or class of an item or row of data, as a member of more than two classes.
 
@@ -123,28 +123,28 @@ such as csv, json, xml etc. these are good options. You may also choose to
 compress them before uploading, and further process them on the cloud side.
 
 - Upload using
-    [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy)
+    [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy?WT.mc_id=pdmsolution-docs-ercenk)
     to blob storage (both Windows and Linux)
 
 - [Mount blob
-    storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-how-to-mount-container-linux)
+    storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-how-to-mount-container-linux?WT.mc_id=pdmsolution-docs-ercenk)
     as a file system on Linux
 
 - Use [Import/Export
-    service](https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service),
+    service](https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service?WT.mc_id=pdmsolution-docs-ercenk),
     if the data size is big, and takes too much time to upload
 
 - [Mount an Azure
-    File](https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows)
+    File](https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows?WT.mc_id=pdmsolution-docs-ercenk)
     share on Windows, Linux and MacOS
 
 If the data is in a SQL Server database, you can also use [Data Migration
-Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview) to upload the
+Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview?WT.mc_id=pdmsolution-docs-ercenk) to upload the
 data to an Azure SQL Database.
 
 There are a variety of tools and services on the Azure platform for Extract,
 Transform and Load (ETL) operations. The most prominent service is the [Azure
-Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/) , which
+Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/?WT.mc_id=pdmsolution-docs-ercenk) , which
 provides a full set of features for manipulating data. Other options for
 manipulating data are present in the many ML services available on Azure through
 the open source libraries.
@@ -153,19 +153,19 @@ As for training the ML mode, Microsoft Azure provides many options, which all
 can be used in different combinations.
 
 - [Azure Machine Learning
-    Services](https://docs.microsoft.com/en-us/azure/machine-learning/preview/)
+    Services](https://docs.microsoft.com/en-us/azure/machine-learning/preview/?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Azure Machine Learning
-    Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/)
+    Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Data Science Virtual
-    Machine](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/)
+    Machine](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Spark MLLib in
-    HDInsight](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-machine-learning-mllib-ipython)
+    HDInsight](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-machine-learning-mllib-ipython?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Batch AI Training
-    Service](https://docs.microsoft.com/en-us/azure/batch-ai/)
+    Service](https://docs.microsoft.com/en-us/azure/batch-ai/?WT.mc_id=pdmsolution-docs-ercenk)
 
 Deciding which tool to use depends on the complexity of the operations, the
 team’s experience, and the size of the data.
@@ -183,7 +183,7 @@ also provides a systematic approach for building solutions that enables teams of
 data scientists to collaborate effectively over the lifecycle of the data.
 
 Microsoft’s [Machine Learning
-documentation](https://docs.microsoft.com/en-us/azure/machine-learning)
+documentation](https://docs.microsoft.com/en-us/azure/machine-learning?WT.mc_id=pdmsolution-docs-ercenk)
 is a good starting point for exploring the options for building, deploying and
 managing ML and AI models to the cloud.
 
@@ -210,16 +210,16 @@ Microsoft Azure platform provides a variety of services for ingesting,
 processing and storing the data, such as:
 
 - [Azure Event
-    Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-what-is-event-hubs)
+    Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-what-is-event-hubs?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Azure Service
-    Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
+    Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Azure IoT
-    Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-iot-hub)
+    Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-iot-hub?WT.mc_id=pdmsolution-docs-ercenk)
 
 - [Apache Kafka for
-    HDInsight](https://docs.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-introduction)
+    HDInsight](https://docs.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-introduction?WT.mc_id=pdmsolution-docs-ercenk)
 
 Unlike the process of building the ML model, consuming it does not require a lot
 of computational resources. Depending on your needs, the model can be deployed
@@ -245,21 +245,21 @@ multiple tenants or geographies (and latency is not critical). An optional
 component, often referred to as “edge gateway” can be added locally to perform
 some of the work - such as data aggregation and projection, stream analytics,
 etc., following a pattern known as the [“Ambassador”
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador).
+pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador?WT.mc_id=pdmsolution-docs-ercenk).
 
 There are multiple ways for using the model on Azure. [Azure Machine Learning
 Web
-service](https://docs.microsoft.com/en-us/azure/machine-learning/studio/consume-web-services)
+service](https://docs.microsoft.com/en-us/azure/machine-learning/studio/consume-web-services?WT.mc_id=pdmsolution-docs-ercenk)
 is the most straightforward and uses [Azure Machine Learning
-Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/what-is-ml-studio)
+Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/what-is-ml-studio?WT.mc_id=pdmsolution-docs-ercenk)
 as the choice for creating the model. One could also choose [Azure Machine
 Learning Model
-Management](https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview)
+Management](https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview?WT.mc_id=pdmsolution-docs-ercenk)
 which provides a comprehensive set of services for managing models, and provides
 REST API endpoints, with authentication, load balancing, automatic scale-out and
 encryption features. The model can be deployed to single machine (e.g. Data
 Science Virtual Machine, an IoT device, a local PC) or [Azure Container
-Service](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes). Once the
+Service](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes?WT.mc_id=pdmsolution-docs-ercenk). Once the
 model is exposed through a REST API, the possibilities for using it are endless,
 from custom applications to enterprise solution integration.
 
@@ -285,7 +285,7 @@ Some use cases require near-real-time data processing. In these cases, we need a
 scalable IoT solution with high data ingestion rate capabilities. The Microsoft
 Azure platform provides many services that can enable solutions for highly
 scalable IoT needs. [Microsoft’s IoT solution
-architecture](https://docs.microsoft.com/en-us/azure/iot-suite/iot-suite-what-is-azure-iot)
+architecture](https://docs.microsoft.com/en-us/azure/iot-suite/iot-suite-what-is-azure-iot?WT.mc_id=pdmsolution-docs-ercenk)
 on the Azure platform has logical components on three stages:
 
 - Device connectivity
@@ -297,7 +297,7 @@ on the Azure platform has logical components on three stages:
 ![IoT solution architecture](assets/pdm-assets/iot.png)
 
 The details of the Azure IoT Solution Architecture are [available
-online](http://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf).
+online](http://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf?WT.mc_id=pdmsolution-docs-ercenk).
 However, there are unique challenges that may arise due to the potentially
 substantial number of devices connecting to backend services.
 
@@ -324,11 +324,11 @@ accessible, with the option of geo-partitioning the data ingestion process.
 Considering predictive maintenance is a feature of the IoT solution. As the data streams through
 the gateway, it needs to be routed to services related with predictive maintenance functionality.
 Another pattern to consider is [Gateway
-Routing](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing).
+Routing](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing?WT.mc_id=pdmsolution-docs-ercenk).
 
 Both patterns can be implemented using Azure service, [IoT
-Hub](https://azure.microsoft.com/en-us/services/iot-hub/) and [Azure Stream
-Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/).
+Hub](https://azure.microsoft.com/en-us/services/iot-hub/?WT.mc_id=pdmsolution-docs-ercenk) and [Azure Stream
+Analytics](https://azure.microsoft.com/en-us/services/stream-analytics/?WT.mc_id=pdmsolution-docs-ercenk).
 
 ## Edge and Cloud Processing Cooperation
 
@@ -340,11 +340,11 @@ pulling data out.
 There can be other considerations such as latency, the need to scrub device data
 locally before sending it to the cloud (multitenant cases), and the need to
 perform projections or aggregations on device data. The [Ambassador
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador)
+pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador?WT.mc_id=pdmsolution-docs-ercenk)
 is a good approach to address these needs. [Microsoft Azure IoT
-Edge](https://docs.microsoft.com/en-us/azure/iot-edge/how-iot-edge-works) is an
+Edge](https://docs.microsoft.com/en-us/azure/iot-edge/how-iot-edge-works?WT.mc_id=pdmsolution-docs-ercenk) is an
 implementation that can act as a proxy to [Microsoft Azure IoT
-Hub](https://azure.microsoft.com/en-us/services/iot-hub/), as well as provide
+Hub](https://azure.microsoft.com/en-us/services/iot-hub/?WT.mc_id=pdmsolution-docs-ercenk), as well as provide
 local processing capabilities with remote management.
 
 A common deployment may include near-real-time
@@ -375,13 +375,13 @@ TLS security, X.509 support, IP whitelisting/blacklisting, and shared access
 policies. The party providing a service must ensure confidential information
 from customers is identified and properly secured or scrubbed out. [Azure Data
 Lake
-Store](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-encryption),
+Store](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-encryption?WT.mc_id=pdmsolution-docs-ercenk),
 [Azure
-Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption),
+Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption?WT.mc_id=pdmsolution-docs-ercenk),
 [Azure Cosmos
-DB](https://docs.microsoft.com/en-us/azure/cosmos-db/database-encryption-at-rest),
+DB](https://docs.microsoft.com/en-us/azure/cosmos-db/database-encryption-at-rest?WT.mc_id=pdmsolution-docs-ercenk),
 and [Azure SQL
-Database](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)
+Database](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql?WT.mc_id=pdmsolution-docs-ercenk)
 are examples of services that can be used for encrypting the data at rest. The
 solution providers should also consider how to partition the data either within
 the same resource (e.g. database) or multiple ones. 
@@ -417,7 +417,7 @@ the five pillars, we also would like to bring the cost effectiveness of the
 solution.
 
 Please see [Pillars of Software
-Quality](https://docs.microsoft.com/en-us/azure/architecture/guide/pillars)
+Quality](https://docs.microsoft.com/en-us/azure/architecture/guide/pillars?WT.mc_id=pdmsolution-docs-ercenk)
 article for the details.
 
 | Pillar                      |                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -446,18 +446,18 @@ in the previous sections.
 
 1. [Future-focused: Stop thinking in the past and get ahead of the unexpected
     with
-    IoT](https://blogs.microsoft.com/iot/2017/02/28/future-focused-stop-thinking-in-the-past-and-get-ahead-of-the-unexpected-with-iot-2/)
+    IoT](https://blogs.microsoft.com/iot/2017/02/28/future-focused-stop-thinking-in-the-past-and-get-ahead-of-the-unexpected-with-iot-2/?WT.mc_id=pdmsolution-docs-ercenk)
 
 2. [Boost equipment reliability with IoT-enabled predictive
-    maintenance](https://www.microsoft.com/en-us/internet-of-things/predictive-maintenance)
+    maintenance](https://www.microsoft.com/en-us/internet-of-things/predictive-maintenance?WT.mc_id=pdmsolution-docs-ercenk)
 
 3. [Capture value from the Internet of Things: How to approach a predictive
     maintenance
-    project](http://download.microsoft.com/download/0/7/D/07D394CE-185D-4B96-AC3C-9B61179F7080/Capture_value_from_the_Internet%20of%20Things_with_Predictive_Maintenance.PDF)
+    project](http://download.microsoft.com/download/0/7/D/07D394CE-185D-4B96-AC3C-9B61179F7080/Capture_value_from_the_Internet%20of%20Things_with_Predictive_Maintenance.PDF?WT.mc_id=pdmsolution-docs-ercenk)
 
 4. [Partner perspectives: Predictive maintenance on the
-    frontlines](https://blogs.microsoft.com/iot/2017/03/21/partner-perspectives-predictive-maintenance-on-the-frontlines/)
+    frontlines](https://blogs.microsoft.com/iot/2017/03/21/partner-perspectives-predictive-maintenance-on-the-frontlines/?WT.mc_id=pdmsolution-docs-ercenk)
 
 5. [From commoditization to servitization: Transforming your business to
     compete in the new age of field service with
-    IoT](https://blogs.microsoft.com/iot/2016/11/07/from-commodization-to-servitization-transforming-your-business-to-compete-in-the-new-age-of-field-service-with-iot/)
+    IoT](https://blogs.microsoft.com/iot/2016/11/07/from-commodization-to-servitization-transforming-your-business-to-compete-in-the-new-age-of-field-service-with-iot/?WT.mc_id=pdmsolution-docs-ercenk)
