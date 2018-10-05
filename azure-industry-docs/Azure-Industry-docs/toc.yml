@@ -1,0 +1,134 @@
+- name: Industry
+  href: index.md
+  items:
+    - name: Financial Services
+      href: financial/index.md
+      items:
+        - name: Risk Grid Computing in Banking
+          items:
+          - name: Overview
+            href: financial/risk-grid-banking-overview.md
+          - name: Solution Guide
+            href: financial/risk-grid-banking-solution-guide.md
+        - name: Mobile Bank Fraud Overview
+          href: financial/mobile-bank-fraud-overview.md
+        - name: Actuarial risk analysis and financial modeling
+          items:
+          - name: Overview
+            href: financial/actuarial-risk-analysis-and-financial-modeling-overview.md
+          - name: Solution Guide
+            href: financial/actuarial-risk-analysis-and-financial-modeling-solution-guide.md
+        - name: Data Management in Banking Overview
+          href: financial/data-mgmt-in-banking-overview.md
+        - name: Additional Resources
+          items:
+          - name: Azure Batch documentation
+            href: /azure/batch/
+            maintainContext: true
+          - name: Azure Machine Learning Package for Forecasting
+            href: /python/api/overview/azure-machine-learning/forecasting-overview
+            maintainContext: true
+          - name: On-premise connectivity
+            href: /azure/networking/networking-overview#connectivity
+            maintainContext: true
+          - name: Batch code samples
+            href: https://azure.microsoft.com/en-us/resources/samples/
+          - name: Batch code samples repo
+            href: https://github.com/Azure/azure-batch-samples
+          - name: FFIEC for Regulated Workloads
+            href: /azure/security/blueprints/financial-services-regulated-workloads
+            maintainContext: true
+          - name: Tutorial- AAD integration with Asset Bank
+            href: /azure/active-directory/active-directory-saas-assetbank-tutorial
+            maintainContext: true
+    - name: Health & Life Sciences
+      href: health/index.md
+      items:
+      - name: Implementing the Azure blueprint for AI
+        items:
+        - name: Overview
+          href: health/overview-healthcare-ai-blueprint.md
+        - name: Solution Guide
+          href: health/sg-healthcare-ai-blueprint.md
+      - name: Biomedical Entity Recognition
+        href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
+        maintainContext: true
+      - name: HL7 FHIR health care record changes
+        href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
+        maintainContext: true
+      - name: Azure Blueprints
+        items:
+          - name: Azure Security and Compliance - HIPAA/HITRUST Health Data and AI
+            href: /azure/security/blueprints/azure-health
+            maintainContext: true
+          - name: Azure Security and Compliance - Data Analytics for UK NHS
+            href: /azure/security/blueprints/uknhs-analytics-overview
+            maintainContext: true
+          - name: Azure Security and Compliance - Data Warehouse for UK NHS
+            href: /azure/security/blueprints/uknhs-datawarehouse-overview
+            maintainContext: true
+          - name: Azure Security and Compliance - IaaS Web Application for UK NHS
+            href: /azure/security/blueprints/uknhs-iaaswa-overview
+            maintainContext: true
+          - name: Azure Security and Compliance - PaaS Web Application for UK NHS
+            href: /azure/security/blueprints/uknhs-paaswa-overview
+            maintainContext: true
+      - name: Additional Resources
+        items:
+          - name: Quickstart - The Microsoft Genomics service
+            href: /azure/genomics/quickstart-run-genomics-workflow-portal
+            maintainContext: true
+          - name: Microsoft Azure GxP Guidelines
+            href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9
+          - name: Designing Secure Health Solutions with Azure
+            href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
+          - name: The Health Bot Overview
+            href: /healthbot/
+            maintainContext: true
+    - name: Manufacturing
+      href: manufacturing/index.md
+      items:
+        - name: High-Power Compute
+          items:
+            - name: Overview
+              href: manufacturing/compute-in-manufacturing-overview.md
+        - name: Predictive Maintenance
+          items: 
+          - name: Overview
+            href: manufacturing/predictive-maintenance-overview.md
+          - name: Solution Guide
+            href: manufacturing/predictive-maintenance-solution.md
+          - name: Additional Resources
+            items:
+              - name: Azure Machine Learning Documentation
+                href: /azure/machine-learning
+              - name: Deep learning for predictive maintenance real-world scenarios
+                href: /azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance
+                maintainContext: true
+              - name: Microsoft IoT Solution Architecture
+                href: /azure/iot-suite/iot-suite-what-is-azure-iot
+              - name: Pillars of Software Quality
+                href: /azure/architecture/guide/pillars
+    - name: Retail
+      href: retail/index.md
+      items:
+        - name: Data Management in Retail Overview
+          href: retail/retail-data-management-overview.md
+        - name: Migrating your e-commerce solution to Azure Overview
+          href: retail/migrating-ecommerce-solution-to-azure.md
+        - name: Optimize and reuse an existing recommendation system
+          href: retail/recommendation-engine-optimization.md
+        - name: PCI DSS-compliant Payment Processing
+          href: /azure/security/blueprints/payment-processing-blueprint
+          maintainContext: true
+        - name: Visual Search Overview
+          href: retail/visual-search-use-case-overview.md
+        - name: Additional Resources
+          items:
+            - name: Azure Cosmos DB in retail and marketing
+              href: /azure/cosmos-db/use-cases#retail-and-marketing
+              maintainContext: true
+            - name: Demand Forecasting and Price Optimization
+              href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
+            - name: Inventory Optimization Solution with Azure AI
+              href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
