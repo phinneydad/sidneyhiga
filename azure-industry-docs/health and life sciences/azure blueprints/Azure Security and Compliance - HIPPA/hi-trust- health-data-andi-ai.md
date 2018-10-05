@@ -1,0 +1,1 @@
+Links to https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?toc=%2Fen-us%2Fazure%2Findustry%2Ftoc.json&bc=%2Fen-us%2Fazure%2Findustry%2Fbreadcrumb%2Ftoc.json&view=azure-ml-py-latest  
